@@ -15,7 +15,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://oluwalana-faith.vercel.app"),
+  metadataBase: new URL("https://donatofaith.vercel.app"),
 
   title: {
     default: "Oluwalana Faith — Product-Focused Software Developer",
@@ -40,8 +40,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Oluwalana Faith" }],
   creator: "Oluwalana Faith",
 
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
     type: "website",
+    url: "/",
     locale: "en_NG",
     title: "Oluwalana Faith — Product-Focused Software Developer",
     description:

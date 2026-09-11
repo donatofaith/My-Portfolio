@@ -69,9 +69,32 @@ function XLogo() {
   return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 4h3.9l3.7 5 4.4-5h1.6l-5.3 6L19 20h-3.9l-4-5.4L6.3 20H4.7l5.6-6.4L5.2 4Zm2.5 1.2 8.1 13.6h1.5L9.2 5.2H7.7Z" /></svg>;
 }
 
+function Sun() {
+  return <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></svg>;
+}
+
+function Moon() {
+  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.2A8.5 8.5 0 0 1 8.8 4a8.5 8.5 0 1 0 11.2 11.2Z" /></svg>;
+}
+
 export default function Home() {
   const [progress, setProgress] = useState(0);
   const [active, setActive] = useState("top");
+  const [theme, setTheme] = useState<"dark" | "light">("dark");
+
+  useEffect(() => {
+    const stored = window.localStorage.getItem("portfolio-theme");
+    const initial = stored === "light" ? "light" : "dark";
+    setTheme(initial);
+    document.documentElement.dataset.theme = initial;
+  }, []);
+
+  const toggleTheme = () => {
+    const next = theme === "dark" ? "light" : "dark";
+    setTheme(next);
+    document.documentElement.dataset.theme = next;
+    window.localStorage.setItem("portfolio-theme", next);
+  };
 
   useEffect(() => {
     const sections = ["top", "work", "about", "capabilities", "contact"];
@@ -102,7 +125,13 @@ export default function Home() {
         <nav aria-label="Primary navigation">
           {["work", "about", "capabilities"].map((item) => <a className={active === item ? "active" : ""} href={`#${item}`} key={item}>{item}</a>)}
         </nav>
-        <a className="nav-cta" href="#contact">Start a project <Arrow /></a>
+        <div className="nav-actions">
+          <button className="theme-toggle" type="button" onClick={toggleTheme} aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`} aria-pressed={theme === "light"}>
+            <span className="theme-icon">{theme === "dark" ? <Sun /> : <Moon />}</span>
+            <span className="theme-label">{theme === "dark" ? "Light" : "Dark"}</span>
+          </button>
+          <a className="nav-cta" href="#contact">Start a project <Arrow /></a>
+        </div>
       </header>
 
       <section className="dark-hero" id="top">

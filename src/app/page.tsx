@@ -124,7 +124,11 @@ export default function Home() {
             <Image src="/projects/portrait.png" alt="Oluwalana Faith" fill priority sizes="(max-width: 850px) 92vw, 42vw" />
             <span className="frame-corner corner-a" /><span className="frame-corner corner-b" />
           </div>
-          <div className="portrait-note"><span>01</span><p>Product thinking<br />Design awareness<br />Engineering</p></div>
+          <div className="portrait-drops" aria-label="Core capabilities">
+            <div className="drop-card drop-one"><span>01</span><b>Product thinking</b></div>
+            <div className="drop-card drop-two"><span>02</span><b>Interface systems</b></div>
+            <div className="drop-card drop-three"><span>03</span><b>AI + data products</b></div>
+          </div>
           <div className="portrait-badge">BUILD<br /><strong>WITH</strong><br />INTENT</div>
         </div>
         <div className="hero-foot"><span>Independent portfolio / 2026</span><span>Scroll to explore ↓</span></div>

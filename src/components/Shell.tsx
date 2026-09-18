@@ -41,8 +41,8 @@ export default function Shell({ children }: { children: ReactNode }) {
   return <div className="site-frame">
     <aside className={`profile-sidebar ${menuOpen ? "menu-open" : ""}`}>
       <div className="profile-top">
-        <Link className="profile-photo" href="/" aria-label="Oluwalana Faith, home"><Image src="/projects/portrait.png" alt="Oluwalana Faith" fill priority sizes="(max-width: 760px) 72px, 260px" /></Link>
-        <div className="profile-identity"><strong>Oluwalana Faith</strong><span>Product-focused software developer</span></div>
+        <div className="profile-cover"><Link className="profile-photo" href="/" aria-label="Oluwalana Faith, home"><Image src="/projects/portrait.png" alt="Oluwalana Faith" fill priority sizes="(max-width: 760px) 72px, 260px" /></Link></div>
+        <div className="profile-identity"><span className="profile-avatar"><Image src="/projects/portrait.png" alt="" fill sizes="72px" /></span><span className="identity-copy"><strong>Oluwalana Faith</strong><span>Software developer</span></span></div>
         <button className="mobile-menu" type="button" aria-expanded={menuOpen} aria-label={menuOpen ? "Close navigation" : "Open navigation"} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? "✕" : "☰"}</button>
       </div>
       <div className="sidebar-inner">

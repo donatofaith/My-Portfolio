@@ -1,5 +1,25 @@
 export const projects = [
   {
+    number: "05",
+    slug: "proofplay",
+    name: "ProofPlay",
+    field: "Education / Learning evidence",
+    description: "A learning experience where young learners explain their thinking through challenges and build Skill Cards that show what they understand.",
+    image: "/projects/proofplay.webp",
+    href: "https://proofplay-alpha.vercel.app/",
+    contribution: "Product design · Frontend · Interactive learning",
+  },
+  {
+    number: "06",
+    slug: "stockflow",
+    name: "StockFlow",
+    field: "Web3 / Tokenized investing",
+    description: "A Solana Devnet interface for exploring automatic allocation rules for tokenized stocks when funds arrive in a connected wallet.",
+    image: "/projects/stockflow.webp",
+    href: "https://stockflow-nine-indol.vercel.app/",
+    contribution: "Product design · Frontend · Web3",
+  },
+  {
     number: "01",
     slug: "prism",
     name: "PRISM AI",
@@ -48,4 +68,5 @@ export const capabilities = [
   { number: "04", title: "Web3 products", text: "Making wallet activity, blockchain data and market information easier to explore." },
 ] as const;
 
-export const tools = ["Next.js", "React", "TypeScript", "CSS", "Supabase", "REST APIs", "Git", "Vercel", "WordPress", "Canva"];
+export const tools = ["Next.js", "React", "TypeScript", "HTML", "CSS", "Python", "PHP", "Supabase", "REST APIs", "Git", "GitHub", "VS Code", "Vercel", "WordPress", "Canva", "CapCut"];
+export const otherSkills = ["AI prompting", "Website administration", "Graphic design", "Photography", "Video editing", "Content creation", "Social media management", "Digital marketing"];

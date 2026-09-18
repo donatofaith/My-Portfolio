@@ -1,0 +1,9 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+
+export const metadata: Metadata = { title: "About", description: "Meet Oluwalana Faith, an Information Technology student and product-focused software developer." };
+
+export default function About() {
+  return <main className="inner-page about-page"><header className="page-heading"><span className="eyebrow">02 / About</span><h1>A builder at the intersection of <em>ideas and execution.</em></h1></header><div className="about-layout"><div className="about-photo"><Image src="/projects/portrait.png" alt="Oluwalana Faith" fill sizes="(max-width: 850px) 90vw, 35vw" /></div><div className="about-story"><span className="small-label">A little about me</span><p className="about-lead">I&apos;m Oluwalana Faith, a product-focused software developer drawn to digital experiences that are both thoughtful and useful.</p><p>I build across responsive interfaces, APIs, databases, AI integrations, blockchain data, analytics and deployment. My projects span crypto intelligence, market research, career development and business growth.</p><p>I approach each product with a simple question: what would make this clearer and more useful for the person using it?</p><Link href="/work" className="inline-link">See the work ↗</Link></div></div><section className="education"><div className="section-head"><div><span className="eyebrow">Learning / Education</span><h2>Building the foundation.</h2></div></div><div className="education-row"><span>01</span><div><h3>B.Sc. Information Technology</h3><p>Federal University of Technology Akure (FUTA)</p></div><strong>In progress</strong></div><div className="education-row"><span>02</span><div><h3>National Diploma, Computer Science</h3><p>Federal Polytechnic Ado-Ekiti</p></div><strong>2020–2022</strong></div></section></main>;
+}

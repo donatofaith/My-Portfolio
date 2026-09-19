@@ -66,7 +66,8 @@ export const capabilities = [
   { number: "02", title: "Frontend engineering", text: "Building responsive, accessible experiences with React, Next.js, TypeScript and modern CSS." },
   { number: "03", title: "AI & data integration", text: "Connecting interfaces to APIs, analytics and intelligent workflows that support useful decisions." },
   { number: "04", title: "Web3 products", text: "Making wallet activity, blockchain data and market information easier to explore." },
+  { number: "05", title: "Data analysis", text: "Cleaning, organizing and visualizing data to uncover patterns and support clearer decisions." },
 ] as const;
 
-export const tools = ["Next.js", "React", "TypeScript", "HTML", "CSS", "Python", "PHP", "Supabase", "REST APIs", "Git", "GitHub", "VS Code", "Vercel", "WordPress", "Canva", "CapCut"];
-export const otherSkills = ["AI prompting", "Website administration", "Graphic design", "Photography", "Video editing", "Content creation", "Social media management", "Digital marketing"];
+export const tools = ["Next.js", "React", "TypeScript", "HTML", "CSS", "Python", "PHP", "Power BI", "MySQL", "Supabase", "REST APIs", "Git", "GitHub", "VS Code", "Vercel", "WordPress", "Canva", "CapCut"];
+export const otherSkills = ["Data analysis", "AI prompting", "Website administration", "Graphic design", "Photography", "Video editing", "Content creation", "Social media management", "Digital marketing"];

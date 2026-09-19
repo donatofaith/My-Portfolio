@@ -48,8 +48,8 @@ export default function Shell({ children }: { children: ReactNode }) {
   return <><div className={`site-loader ${booting ? "is-loading" : ""}`} role="status" aria-label="Loading portfolio"><span className="loader-mark" aria-hidden="true">F.</span><span className="loader-line" aria-hidden="true" /></div><div className="site-frame">
     <aside className={`profile-sidebar ${menuOpen ? "menu-open" : ""}`}>
       <div className="profile-top">
-        <div className="profile-cover"><Link className="profile-photo" href="/" aria-label="Oluwalana Faith, home"><Image src="/projects/portrait.png" alt="Oluwalana Faith" fill priority sizes="(max-width: 760px) 72px, 260px" /></Link></div>
-        <div className="profile-identity"><span className="profile-avatar"><Image src="/projects/portrait.png" alt="" fill sizes="72px" /></span><span className="identity-copy"><strong>Oluwalana Faith</strong><span>Software developer</span></span></div>
+        <div className="profile-cover"><Link className="profile-photo" href="/" aria-label="Faith Oluwalana, home"><Image src="/projects/portrait.png" alt="Faith Oluwalana" fill priority sizes="(max-width: 760px) 72px, 260px" /></Link></div>
+        <div className="profile-identity"><span className="profile-avatar"><Image src="/projects/portrait.png" alt="" fill sizes="72px" /></span><span className="identity-copy"><strong>Faith Oluwalana</strong><span>Software developer</span></span></div>
         <button className="mobile-menu" type="button" aria-expanded={menuOpen} aria-label={menuOpen ? "Close navigation" : "Open navigation"} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? "✕" : "☰"}</button>
       </div>
       <div className="sidebar-inner">
@@ -58,6 +58,6 @@ export default function Shell({ children }: { children: ReactNode }) {
         <div className="sidebar-bottom"><Link className={`sidebar-contact ${pathname === "/contact" ? "current-contact" : ""}`} href="/contact" onClick={() => setMenuOpen(false)}>Let&apos;s connect <span>↗</span></Link></div>
       </div>
     </aside>
-    <div className="site-main"><header className="topbar"><span className="topbar-name">Oluwalana Faith <span> / {pathname === "/" ? "Home" : pathname.slice(1)}</span></span><div className="topbar-actions"><span className="availability"><i /> Open to opportunities</span><button className="theme-switch" type="button" aria-label={`Switch to ${theme === "light" ? "dark" : "light"} theme`} aria-pressed={theme === "dark"} onClick={toggleTheme}><span aria-hidden="true">{theme === "light" ? "☾" : "☀"}</span><span>{theme === "light" ? "Dark" : "Light"}</span></button></div></header><div className="page-content" key={pathname}>{children}</div><footer className="site-footer"><span>© {new Date().getFullYear()} Oluwalana Faith</span><span>Design with purpose. Build with clarity.</span></footer></div>
+    <div className="site-main"><header className="topbar"><span className="topbar-name">Faith Oluwalana <span> / {pathname === "/" ? "Home" : pathname.slice(1)}</span></span><div className="topbar-actions"><span className="availability"><i /> Open to opportunities</span><button className="theme-switch" type="button" aria-label={`Switch to ${theme === "light" ? "dark" : "light"} theme`} aria-pressed={theme === "dark"} onClick={toggleTheme}><span aria-hidden="true">{theme === "light" ? "☾" : "☀"}</span><span>{theme === "light" ? "Dark" : "Light"}</span></button></div></header><div className="page-content" key={pathname}>{children}</div><footer className="site-footer"><span>© {new Date().getFullYear()} Faith Oluwalana</span><span>Design with purpose. Build with clarity.</span></footer></div>
   </div></>;
 }

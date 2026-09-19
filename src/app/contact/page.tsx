@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: "Contact", description: "Get in touch with Oluwalana Faith about software products, collaboration and opportunities." };
+export const metadata: Metadata = { title: "Contact", description: "Get in touch with Faith Oluwalana about software products, collaboration and opportunities." };
 
 function ContactIcon({ type }: { type: "mail" | "github" | "x" }) {
   if (type === "mail") return <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m4 7 8 6 8-6" /></svg>;

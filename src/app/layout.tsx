@@ -8,12 +8,12 @@ const heading = Manrope({ variable: "--font-heading", subsets: ["latin"], displa
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://donatofaith.vercel.app"),
-  title: { default: "Oluwalana Faith — Software Developer", template: "%s | Oluwalana Faith" },
-  description: "Oluwalana Faith builds thoughtful, user-centred products across AI, Web3, data and the modern web.",
-  authors: [{ name: "Oluwalana Faith" }],
-  creator: "Oluwalana Faith",
+  title: { default: "Faith Oluwalana — Software Developer", template: "%s | Faith Oluwalana" },
+  description: "Faith Oluwalana builds thoughtful, user-centred products across AI, Web3, data and the modern web.",
+  authors: [{ name: "Faith Oluwalana" }],
+  creator: "Faith Oluwalana",
   alternates: { canonical: "/" },
-  openGraph: { title: "Oluwalana Faith — Software Developer", description: "Building digital products with clarity and purpose.", url: "/", type: "website", images: [{ url: "/projects/portrait.png", alt: "Oluwalana Faith" }] },
+  openGraph: { title: "Faith Oluwalana — Software Developer", description: "Building digital products with clarity and purpose.", url: "/", type: "website", images: [{ url: "/projects/portrait.png", alt: "Faith Oluwalana" }] },
   twitter: { card: "summary_large_image", images: ["/projects/portrait.png"] },
 };
 

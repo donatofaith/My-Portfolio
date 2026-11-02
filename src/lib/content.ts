@@ -1,13 +1,25 @@
 export const projects = [
   {
+    number: "08",
+    slug: "vimbre",
+    name: "Vimbre",
+    field: "SaaS / Team operations",
+    description: "A team-work platform that turns conversations into reviewed actions, keeps decisions and role knowledge connected, and prepares handovers with context for the people covering the work.",
+    image: "/projects/vimbre-workspace.svg",
+    imageAlt: "Illustrative Vimbre workspace preview using the product’s official brand and workflow labels",
+    href: "https://vimbre.com",
+    contribution: "Product development · Frontend · Supabase",
+  },
+  {
     number: "07",
     slug: "pacsa",
     name: "Pacsa International School",
     field: "Education / School website",
-    description: "A digital experience for a Christian secondary school focused on academic excellence, character, discipline, leadership and helping students realize their potential. The work also includes a structured online admissions form.",
-    image: "/projects/pacsa-school.svg",
+    description: "A school website for Pastors’ Children Secondary Academy, presenting its academic and character-building mission, school gallery, admissions entry point, and student and teacher portals.",
+    image: "/projects/pacsa-school.webp",
+    imageAlt: "Pacsa students in purple uniforms beneath the school’s official name and admissions call to action",
     href: "https://pacaschool.org",
-    contribution: "Website design · Frontend · Online admissions",
+    contribution: "Website development · School portals · Online admissions",
   },
   {
     number: "05",

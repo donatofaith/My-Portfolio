@@ -68,3 +68,6 @@ html[data-theme="dark"] body{background:#171515}
 @media(max-width:650px){.contact-links{align-items:stretch}.contact-socials{grid-template-columns:repeat(3,1fr)}.contact-socials a{padding:10px 8px}.contact-socials span{display:none}.contact-work-link{align-items:flex-start;flex-direction:column;gap:14px}}
 .capability-grid .capability-card:last-child:nth-child(odd){grid-column:1/-1;min-height:210px}
 @media(max-width:650px){.capability-grid .capability-card:last-child:nth-child(odd){grid-column:auto}}
+
+/* Pacsa International School project card */
+.work-pacsa .work-preview { background: linear-gradient(135deg, #33204f, #7445a0 62%, #aa7bb8); }

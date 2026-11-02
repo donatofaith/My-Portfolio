@@ -1,5 +1,15 @@
 export const projects = [
   {
+    number: "07",
+    slug: "pacsa",
+    name: "Pacsa International School",
+    field: "Education / School website",
+    description: "A digital experience for a Christian secondary school focused on academic excellence, character, discipline, leadership and helping students realize their potential. The work also includes a structured online admissions form.",
+    image: "/projects/pacsa-school.webp",
+    href: "https://pacaschool.org",
+    contribution: "Website design · Frontend · Online admissions",
+  },
+  {
     number: "05",
     slug: "proofplay",
     name: "ProofPlay",

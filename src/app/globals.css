@@ -72,7 +72,7 @@ html[data-theme="dark"] body{background:#171515}
 /* Pacsa International School project card */
 .work-pacsa .work-preview { background: linear-gradient(135deg, #33204f, #7445a0 62%, #aa7bb8); }
 
-/* Mobile landing page: simplify the header, tighten the hero, and make work swipeable. */
+/* Mobile landing page: simplify the header and keep the moving project gallery. */
 @media(max-width:650px){
   .site-main:has(.home-page) .topbar{justify-content:flex-end;min-height:44px;padding:5px 20px}
   .site-main:has(.home-page) .topbar-name{display:none}
@@ -85,12 +85,22 @@ html[data-theme="dark"] body{background:#171515}
   .intro-kicker{font-size:.58rem;letter-spacing:.13em;margin:16px 0 10px}
   .intro-center h1{font-size:clamp(2.25rem,9vw,3.45rem);line-height:1.04}
   .intro-description{font-size:.84rem;line-height:1.55}
-  .project-showcase{margin-top:0;overflow-x:auto;overscroll-behavior-inline:contain;padding:18px 20px 28px;scrollbar-width:none;scroll-snap-type:x mandatory}
+  .project-showcase{margin-top:0;padding:18px 20px 28px}
   .project-showcase::-webkit-scrollbar{display:none}
   .project-showcase:before,.project-showcase:after{display:none}
-  .showcase-track{animation:none;transform:none;gap:12px;width:max-content}
+  .showcase-track{gap:12px;animation-duration:48s}
   .showcase-tile,.showcase-tile:nth-child(4n+2),.showcase-tile:nth-child(4n+3){width:min(82vw,360px);height:auto;aspect-ratio:2.05;transform:none;scroll-snap-align:start}
   .showcase-tile:hover,.showcase-tile:focus-visible{transform:translateY(-3px)}
   .showcase-caption{font-size:.76rem;padding:32px 14px 12px}
   .intro-bottom{padding:15px 20px;font-size:.58rem}
 }
+
+/* Keep the full campus interface visible in the DoniVerse project card. */
+.work-doniverse .work-preview{background:#e8f0ea}
+.work-doniverse .work-image{aspect-ratio:1348/926}
+/* Touch scrolling remains available when the visitor requests reduced motion. */
+@media(prefers-reduced-motion:reduce){
+  .project-showcase{overflow-x:auto;scroll-snap-type:x mandatory}
+  .showcase-track{animation:none;transform:none}
+}
+@media(hover:none){.project-showcase:hover .showcase-track{animation-play-state:running}}

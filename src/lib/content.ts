@@ -22,6 +22,17 @@ export const projects = [
     contribution: "Website development · School portals · Online admissions",
   },
   {
+    number: "09",
+    slug: "doniverse",
+    name: "DoniVerse",
+    field: "Education / Campus companion",
+    description: "A campus companion for FUTA students to find places and walking directions, track registration steps, discover campus events and communities, and reach trusted help contacts.",
+    image: "/projects/doniverse-home.jpg",
+    imageAlt: "DoniVerse homepage showing campus search, Explore campus and student journey cards",
+    href: "https://doniverse.vercel.app/",
+    contribution: "Frontend · Campus maps · Student journey tracking",
+  },
+  {
     number: "05",
     slug: "proofplay",
     name: "ProofPlay",
